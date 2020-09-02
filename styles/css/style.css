@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background: url('../../images/slide1.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    line-height: 100px;
+}
+.nav__icon{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    background: #fff;
+    text-align: center;
+}
+.nav__icon span {
+    height: 3px;
+    width: 30px;
+    background: #3f3f3f;
+    display:block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav__icon span:nth-child(1){
+    top: 35%;
+    width: 18px;
+    left: 41%;
+}
+.nav__icon span:nth-child(2){
+    top: 50%;
+}
+.nav__icon span:nth-child(3){
+    bottom: 30%;
+    width: 25px;
+    left: 47%;
+}
+.dot{
+    background: #f9bf26;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.header__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bold{
+    font-size: 70px;
+    text-transform: capitalize;
+    font-weight: 800;
+    white-space: nowrap;
+    word-spacing: -10px;
+    position: relative;
+}
+.bold:before{
+    content: 'Archia';
+    position: absolute;
+    left: -16%;
+    top: -64%;
+    opacity: 0.05;
+    font-size: 300px;
+    font-weight: 800;
+}
+.semi-bold {
+    text-transform: capitalize;
+    color: #3f3f3f;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.para {
+    color:rgb(117, 116, 116);
+    font-weight: 600;
+    font-size: 15px;
+}
+.rounded__btn{
+    font-size: 12px;
+    color:#090909;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    padding: .5rem 1.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 20px 0;
+}
+.rounded__btn:hover{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+}
